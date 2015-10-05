@@ -1,4 +1,4 @@
-<apex:page standardController="Account" showHeader="true" sidebar="false" recordSetVar="Accounts">
+<apex:page standardController="Account" showHeader="true" sidebar="false" recordSetVar="Accounts" id="page">
 	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.min.js')}" />
 	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/store.min.js')}" />
 	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.resizableColumns.min.js')}" />
