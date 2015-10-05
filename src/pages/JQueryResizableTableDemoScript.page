@@ -1,0 +1,12 @@
+<apex:page>
+	<script type="text/javascript">
+    $(function(){
+      $(".resizableTable").resizableColumns({
+        store: window.store
+      });
+      $(".resizableTable-vf").resizableColumns({
+        store: window.store
+      });
+    });
+  </script>
+</apex:page>
