@@ -1,5 +1,5 @@
 <apex:page>
-	<script type="text/javascript">
+  <script type="text/javascript">
     $(function(){
       $(".resizableTable").resizableColumns({
         store: window.store
