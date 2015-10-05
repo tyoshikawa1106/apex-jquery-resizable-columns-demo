@@ -1,5 +1,5 @@
 <apex:page>
-	<style>
+  <style>
     .my-Table {
       width:100%;
       border-collapse: separate;
