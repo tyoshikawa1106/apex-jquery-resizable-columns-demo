@@ -26,5 +26,8 @@
 </apex:page>
 ```
 
+##Demo
+<a href="https://www.youtube.com/watch?t=45&v=7N9p4c8VCwQ">https://www.youtube.com/watch?t=45&v=7N9p4c8VCwQ</a>
+
 ##jquery-resizable-columns
 <a href="https://github.com/dobtco/jquery-resizable-columns">https://github.com/dobtco/jquery-resizable-columns</a>
