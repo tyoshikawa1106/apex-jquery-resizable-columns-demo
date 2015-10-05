@@ -25,3 +25,6 @@
   </script>
 </apex:page>
 ```
+
+##jquery-resizable-columns
+<a href="https://github.com/dobtco/jquery-resizable-columns">https://github.com/dobtco/jquery-resizable-columns</a>
