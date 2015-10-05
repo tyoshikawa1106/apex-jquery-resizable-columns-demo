@@ -1,4 +1,4 @@
-# apex-jquery-resizable--columns-demo
+# apex-jquery-resizable-columns-demo
 
 <img src="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20151005/20151005181422.png" />
 
