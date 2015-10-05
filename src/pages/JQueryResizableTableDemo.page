@@ -1,55 +1,55 @@
-<apex:page standardController="Account" showHeader="true" sidebar="false" recordSetVar="Accounts">
-	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.min.js')}" />
-	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/store.min.js')}" />
-	<apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.resizableColumns.min.js')}" />
-	<apex:stylesheet value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.resizableColumns.css')}" />
-	<apex:include pageName="JQueryResizableTableDemoCss" />
+<apex:page standardController="Account" showHeader="true" sidebar="false" recordSetVar="Accounts" id="page">
+  <apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.min.js')}" />
+  <apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/store.min.js')}" />
+  <apex:includeScript value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.resizableColumns.min.js')}" />
+  <apex:stylesheet value="{!URLFOR($Resource.jquery_resizable, 'dist/jquery.resizableColumns.css')}" />
+  <apex:include pageName="JQueryResizableTableDemoCss" />
 
-	<div id="vf-page">
-		<apex:pageBlock mode="edit" id="block">
-			<apex:pageBlockSection title="HTML - Table" columns="1">
-				<table cellpadding="0" cellspacing="0" class="resizableTable my-Table">
-				  <thead>
-		        <tr>
-		          <th data-resizable-column-id="#" style="width: 50px;">#</th>
-		          <th data-resizable-column-id="first_name">First Name</th>
-		          <th data-resizable-column-id="last_name">Last Name</th>
-		          <th data-resizable-column-id="username" id="username-column" data-noresize="true">Username</th>
-		        </tr>
-		      </thead>
-		      <tbody>
-		        <tr>
-		          <td>1</td>
-		          <td>Mark</td>
-		          <td>Otto</td>
-		          <td>@mdo</td>
-		        </tr>
-		        <tr>
-		          <td>2</td>
-		          <td>Jacob</td>
-		          <td>Thornton</td>
-		          <td>@fat</td>
-		        </tr>
-		        <tr>
-		          <td>3</td>
-		          <td colspan="2">Larry the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		      </tbody>
-		    </table>
-	    </apex:pageBlockSection>
-	    <apex:pageBlockSection title="Apex - Table" columns="1">
-	    	<!-- apex:pageBlockTableとは相性悪そう.. -->
-	    	<apex:pageBlockTable value="{!Accounts}" var="item" styleClass="resizableTable-vf">
-	    		<apex:column headerValue="{!$ObjectType.Account.Fields.Name.Label}" style="width: 50px;">
-	    			<apex:outputField value="{!item.Name}" />
-	    		</apex:column>
-	    		<apex:column headerValue="{!$ObjectType.Account.Fields.AccountNumber.Label}">
-	    			<apex:outputField value="{!item.AccountNumber}" />
-	    		</apex:column>
-	    	</apex:pageBlockTable>
-	    </apex:pageBlockSection>
-		</apex:pageBlock>
-	</div>
-	<apex:include pageName="JQueryResizableTableDemoScript" />
+  <div id="vf-page">
+    <apex:pageBlock mode="edit" id="block">
+      <apex:pageBlockSection title="HTML - Table" columns="1">
+        <table cellpadding="0" cellspacing="0" class="resizableTable my-Table">
+          <thead>
+            <tr>
+              <th data-resizable-column-id="#" style="width: 50px;">#</th>
+              <th data-resizable-column-id="first_name">First Name</th>
+              <th data-resizable-column-id="last_name">Last Name</th>
+              <th data-resizable-column-id="username" id="username-column" data-noresize="true">Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </apex:pageBlockSection>
+      <apex:pageBlockSection title="Apex - Table" columns="1">
+        <!-- apex:pageBlockTableとは相性悪そう.. -->
+        <apex:pageBlockTable value="{!Accounts}" var="item" styleClass="resizableTable-vf">
+          <apex:column headerValue="{!$ObjectType.Account.Fields.Name.Label}" style="width: 50px;">
+            <apex:outputField value="{!item.Name}" />
+          </apex:column>
+          <apex:column headerValue="{!$ObjectType.Account.Fields.AccountNumber.Label}">
+            <apex:outputField value="{!item.AccountNumber}" />
+          </apex:column>
+        </apex:pageBlockTable>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </div>
+  <apex:include pageName="JQueryResizableTableDemoScript" />
 </apex:page>
